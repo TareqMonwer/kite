@@ -1,0 +1,250 @@
+:root {
+    --menu-hover-light: #eff4f4;
+    --text-color: #6D7785;
+    --greenish-primary: #16a085;
+    --greenish-border: #16a08540;
+    --greenish-fade-bg: #16a08526;
+    --greenish-text: #005e4b;
+    --text-primary: #555;
+    --shadow-down: 0px 2px 4px 0px rgba(0, 0, 0, .1);
+}
+
+body {
+    background: #F5F7F9 !important;
+    font-family: Lato, sans-serif !important;
+}
+
+.nav-up {
+    background: var(--greenish-primary) !important;
+    transition: .1s ease-in-out;
+}
+.bg-gprimary {
+    background: var(--greenish-primary) !important;
+    color: white !important;
+}
+.text-gprimary {
+    color: var(--greenish-primary) !important;
+}
+
+#title_seperator {
+    border: 4px solid 
+    #fff;
+    width: 200px;
+    height: 5px;
+    display: block;
+    margin: 0 auto;
+        margin-bottom: 0px;
+    position: relative;
+    margin-bottom: 14px;
+}
+
+#title_seperator::after {
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    background: 
+    #fff;
+    left: 44%;
+    top: -13px;
+    transform: rotate(45deg);
+}
+
+p {
+    color: var(--text-primary);
+    font-size: 1em;
+}
+
+nav {
+    box-shadow: var(--shadow-down);
+}
+
+.logo.navbar-brand img {
+    height: 40px !important; 
+    width: 40px; 
+    margin-bottom: 0px; 
+    margin-right: -5px
+}
+
+.navbar-light .navbar-brand {
+    color:rgba(0,0,0,.9);
+    font-family: 'Lobster', cursive;
+    margin-right: 1.5rem;
+}
+
+.nav-item {
+    margin-right: .6rem;
+}
+
+
+#top_img_bg {
+    /* background-image: url('../../images/Isometric\ Teamwork\ Office\ vector.svg'); */
+    background: url(../../images/wd.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    /* background-position: right;
+    background-size: 40% 150%;
+    padding: 5rem 0;    */
+}
+
+#hero__content h1 {
+    font-weight: bold;
+}
+
+#hero__content p {
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+.line-gape200 {
+    height: 100px;
+}
+
+.carousel-item img {
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position: bottom bottom;
+}
+
+.mega-menu {
+    width: 900px;
+    padding: 20px !important;
+    box-shadow:  0 10px 50px 0 rgba(0,0,0,.17);
+}
+
+.mega-menu__service:hover {
+    background: var(--menu-hover-light);
+    border-radius: 5px;
+}
+
+.mega-menu__service .text {
+    color: #61676c;
+}
+
+.mega-menu .icon i {
+  color: var(--greenish-text);
+}
+
+.mega-menu__service .text p:nth-child(2) {
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.icon i {
+    margin-right: 6px;
+    font-size: 30px;
+}
+
+.section_title h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.title_colored {
+    color: var(--greenish-primary);
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.service__box {
+    text-align: center;
+    margin-bottom: 40px;
+    background: #fff;
+    padding: 35px;
+    border: 2px solid #f4f4f4;
+    box-shadow: var(--shadow-down);
+    border-radius: 4px;
+    color: var(--text-color);
+}
+
+#why {
+    background: #fff;
+    padding-top: 40px;
+}
+
+.why__box {
+    background: var(--greenish-fade-bg);
+    padding: 15px 0px 15px 50px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--greenish-border);
+    color: var(--text-color);
+    box-shadow: var(--shadow-down);
+    margin-bottom: 30px;
+}
+
+.why__box h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--greenish-text);
+}
+
+.why__box_logo img {
+    height: 65px;
+    width: 65px;
+    margin-bottom: 10px;
+}
+
+.feature_logo {
+    height: 100px;
+}
+
+#testimonials {
+    background: url(../../images/customer.svg) no-repeat top;
+    padding-top: 8rem;
+    padding-bottom: 21rem;
+}
+
+#testimonials .section_title h3 {
+    color: #fff;
+}
+
+#testimonials .section_title p {
+    color: aliceblue;
+}
+
+.hide_p {
+    display: none;
+}
+
+.review_box p {
+    color:#2d2d2ded;
+    line-height: 1.5rem;
+}
+
+.review_box h3 {
+    color: var(--text-primary);
+}
+
+.review_box {
+    background: rgba(255, 255, 255, .9);
+    padding: 3rem;
+    border-radius: 5px;
+    box-shadow: var(--shadow-down);
+    color: white;
+    text-align: center;
+}
+
+.review_box p {
+  color: var(--text-primary);
+}
+.review_box img {
+  border: 3px solid #fefeff;
+  margin: 0.9rem auto;
+}
+
+.inner__footer h3 {
+    padding-bottom: 1.4rem;
+}
+
+.footer_item_link {
+    margin-bottom: 1em;
+    text-decoration: none !important;
+}
