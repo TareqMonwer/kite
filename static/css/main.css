@@ -22,32 +22,14 @@ body {
     background: var(--greenish-primary) !important;
     color: white !important;
 }
+
+.bg-dark-greenish {
+    background: var(--greenish-text);
+    color: #fff !important;
+}
+
 .text-gprimary {
     color: var(--greenish-primary) !important;
-}
-
-#title_seperator {
-    border: 4px solid 
-    #fff;
-    width: 200px;
-    height: 5px;
-    display: block;
-    margin: 0 auto;
-        margin-bottom: 0px;
-    position: relative;
-    margin-bottom: 14px;
-}
-
-#title_seperator::after {
-    content: "";
-    position: absolute;
-    height: 24px;
-    width: 24px;
-    background: 
-    #fff;
-    left: 44%;
-    top: -13px;
-    transform: rotate(45deg);
 }
 
 p {
@@ -75,6 +57,7 @@ nav {
 .nav-item {
     margin-right: .6rem;
 }
+
 
 
 #top_img_bg {
@@ -109,7 +92,7 @@ nav {
 }
 
 .mega-menu {
-    width: 900px;
+    width: 80%;
     padding: 20px !important;
     box-shadow:  0 10px 50px 0 rgba(0,0,0,.17);
 }
@@ -163,9 +146,8 @@ nav {
     color: var(--text-color);
 }
 
-#why {
+#why, #featuredin {
     background: #fff;
-    padding-top: 40px;
 }
 
 .why__box {
@@ -192,22 +174,12 @@ nav {
     margin-bottom: 10px;
 }
 
+.features .card {
+    box-shadow: var(--shadow-down) !important;
+}
+
 .feature_logo {
     height: 100px;
-}
-
-#testimonials {
-    background: url(../../images/customer.svg) no-repeat top;
-    padding-top: 8rem;
-    padding-bottom: 21rem;
-}
-
-#testimonials .section_title h3 {
-    color: #fff;
-}
-
-#testimonials .section_title p {
-    color: aliceblue;
 }
 
 .hide_p {
@@ -242,9 +214,48 @@ nav {
 
 .inner__footer h3 {
     padding-bottom: 1.4rem;
+    color: #fff;
 }
 
 .footer_item_link {
     margin-bottom: 1em;
     text-decoration: none !important;
+    color: #fff;
+}
+
+.footer_item_link:hover {
+    color: var(--greenish-text);    
+}
+
+@media only screen and (max-width: 991px)  {
+    .col-md-3 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 763px) {
+    nav {
+        background: var(--greenish-primary) !important;
+    }
+    .nav-link {
+        color: #fff !important;
+    }
+}
+
+@media screen and (min-width: 697) {
+    .mega-menu {
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 988px) {
+  .mega-menu {
+      width: 800px;
+  }
+}
+
+@media screen and (min-width: 1219px) {
+  .mega-menu {
+      width: 900px;
+  }
 }
