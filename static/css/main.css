@@ -58,6 +58,10 @@ nav {
     margin-right: .6rem;
 }
 
+.owl-carousel .owl-item img {
+    display: block;
+    width: auto !important;
+}
 
 
 #top_img_bg {
