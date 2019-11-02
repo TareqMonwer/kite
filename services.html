@@ -158,7 +158,7 @@
             <div class="row single-service mb-3" id="webdev">
                 <div class="col-8">
                     <h3 class="mb-4 single-service-title">Web Development</h3>
-                    <div class="service_card">
+                    <div class="service_card" id="webdev__card">
                         <ul class="tech-tabs-container mb-3" id="tech-tabs">
                             <li class="webdev__python">
                                 <a class="active" href="#webdev__python__tab">
@@ -272,10 +272,9 @@
                             <div class="tab_panel" id="elarning__survilance">
                                 <div class="tech__details">
                                     <div class="tech__details__inner p-3">
-                                        <img src="./images/logos/services_page/wp.png" class="tech-icon">
-                                        <img src="./images/logos/services_page/elementor.png" class="tech-icon">
-                                        <img src="./images/logos/services_page/betheme.png" class="tech-icon">
-                                        <strong>Survilance</strong>
+                                        <img src="./images/logos/services_page/survilance.png" class="tech-icon">
+                                        <!-- <img src="./images/logos/services_page/elementor.png" class="tech-icon">
+                                        <img src="./images/logos/services_page/betheme.png" class="tech-icon"> -->
                                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque
                                             perferendis ut et temporibus eum alias esse laborum eius non minima?
                                         </p>
@@ -285,9 +284,9 @@
                             <div class="tab_panel active" id="elarning__school_management">
                                 <div class="tech__details">
                                     <div class="tech__details__inner p-3">
-                                        <img src="./images/logos/services_page/wp.png" class="tech-icon">
-                                        <img src="./images/logos/services_page/elementor.png" class="tech-icon">
-                                        <img src="./images/logos/services_page/betheme.png" class="tech-icon">
+                                        <img src="./images/logos/services_page/sms.jpg" class="tech-icon">
+                                        <!-- <img src="./images/logos/services_page/elementor.png" class="tech-icon">
+                                        <img src="./images/logos/services_page/betheme.png" class="tech-icon"> -->
 
                                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
                                             ullam iste
@@ -303,9 +302,9 @@
                             <div class="tab_panel" id="elarning__course_portal">
                                 <div class="tech__details">
                                     <div class="tech__details__inner p-3">
-                                        <img src="./images/logos/services_page/wp.png" class="tech-icon">
-                                        <img src="./images/logos/services_page/elementor.png" class="tech-icon">
-                                        <img src="./images/logos/services_page/betheme.png" class="tech-icon">
+                                        <img src="./images/logos/services_page/online-learning.svg" class="tech-icon">
+                                        <!-- <img src="./images/logos/services_page/elementor.png" class="tech-icon">
+                                        <img src="./images/logos/services_page/betheme.png" class="tech-icon"> -->
 
                                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
                                             ullam iste
@@ -321,8 +320,24 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-4 mt-5">
+                    <h3>Service Insights</h3>
+                    <img src="./images/logos/services_page/insights/countdown.svg" alt="" class="insight">
+                    <img src="./images/logos/services_page/insights/group.svg" alt="" class="insight">
+                    <img src="./images/logos/services_page/insights/target.svg" alt="" class="insight">
+
+                    <a href="" class="btn btn-info d-block mb-2">See Pricing Plans</a>
+                    <a href="" class="btn btn-success d-block">Go to Service Page</a>
+                </div>
+                <div class="single-service-quote col-12 py-5">
+                    <q>
+                        People expect to be bored by eLearning—let’s show them it doesn’t
+                        have to be like that!
+                    </q>
+                    <br>
+                    <cite>― Cammy Bean</cite>
+                </div>
             </div>
-            <div class="col-4"></div>
         </div>
         </div>
     </section>
@@ -360,7 +375,7 @@
         // service tabs in vanilla js
         const onTabClick = e => {
             // get all active items inside tech-tab
-            let activeInTech = document.querySelectorAll('.active');
+            let activeInTech = document.querySelectorAll('#webdev .active');
             // remove active class from each item
             for (let i = 0; i < activeInTech.length; i++) {
                 activeInTech[i].className = activeInTech[i].className.replace('active', '');
@@ -378,12 +393,25 @@
         element.addEventListener('click', onTabClick, false);
 
 
+        const onSecTabClick = e => {
+            // get all active items inside tech-tab
+            let activeInTech = document.querySelectorAll('#elearning .active');
+            // remove active class from each item
+            for (let i = 0; i < activeInTech.length; i++) {
+                activeInTech[i].className = activeInTech[i].className.replace('active', '');
+            }
+            // add active class in tab-btn and tab-contents
+            e.target.className += ' active';
+            console.log(e.target)
+            // e.target.parentElement.href.split('#')[1]
+            document.getElementById(e.target.href.split('#')[1]).className += ' active';
+        }
         // service tabs in vanilla js
         // getting the techtabs
         const element2 = document.getElementById('tech-tabs2');
         // console.log(element);
         // adding eventlistener to techtab
-        element2.addEventListener('click', onTabClick, false);
+        element2.addEventListener('click', onSecTabClick, false);
 
 
     </script>
