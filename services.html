@@ -243,7 +243,7 @@
                     <a href="" class="btn btn-info d-block mb-2">See Pricing Plans</a>
                     <a href="" class="btn btn-success d-block">Go to Service Page</a>
                 </div>
-                <div class="single-service-quote col-12 py-5">
+                <div class="single-service-quote col-8 py-5">
                     <q>
                         We don't just build websites, we build websites that SELLS
                     </q>
@@ -329,7 +329,7 @@
                     <a href="" class="btn btn-info d-block mb-2">See Pricing Plans</a>
                     <a href="" class="btn btn-success d-block">Go to Service Page</a>
                 </div>
-                <div class="single-service-quote col-12 py-5">
+                <div class="single-service-quote col-8 py-5">
                     <q>
                         People expect to be bored by eLearning—let’s show them it doesn’t
                         have to be like that!
@@ -343,6 +343,53 @@
     </section>
 
 
+    <!-- Footer -->
+    <section id="footer" class="bg-gprimary pt-5">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-12 col-md-3">
+                    <div class="d-flex flex-column inner__footer">
+                        <h3>Services</h3>
+                        <a href="" class="footer_item_link">Web Development</a>
+                        <a href="" class="footer_item_link">Training</a>
+                        <a href="" class="footer_item_link">Bug Fixing</a>
+                        <a href="" class="footer_item_link">Automation</a>
+                        <a href="" class="footer_item_link">Business Solution</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="d-flex flex-column inner__footer">
+                        <h3>Support</h3>
+                        <a href="" class="footer_item_link">Terms of Service</a>
+                        <a href="" class="footer_item_link">Refund Policy</a>
+                        <a href="" class="footer_item_link">Prvacy Policy</a>
+                        <a href="" class="footer_item_link">Report A Bug</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="d-flex flex-column inner__footer">
+                        <h3>Company</h3>
+                        <a href="" class="footer_item_link">About Us</a>
+                        <a href="" class="footer_item_link">Contact Us</a>
+                        <a href="" class="footer_item_link">Testimonials</a>
+                        <a href="" class="footer_item_link">Partners</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark-greenish">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-light py-3 mb-0">© <span id="current_year"></span>, KITE Ltd. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <script src="static/js/jquery-3.4.1.min.js"></script>
     <script src="static/OwlCarousel2/owl.carousel.min.js"></script>
@@ -352,8 +399,7 @@
 
     <script>
         // Current Year in Footer
-        // document.getElementById('current_year').innerHTML = new Date().getFullYear();
-
+        document.getElementById('current_year').innerHTML = new Date().getFullYear();
 
         // Navigation Scroll Animation
         $(window).scroll(function () {
@@ -371,14 +417,13 @@
             }
         });
 
-
         // service tabs in vanilla js
         const onTabClick = e => {
             // get all active items inside tech-tab
             let activeInTech = document.querySelectorAll('#webdev .active');
             // remove active class from each item
-            for (let i = 0; i < activeInTech.length; i++) {
-                activeInTech[i].className = activeInTech[i].className.replace('active', '');
+            for (let i of activeInTech) {
+                i.className = i.className.replace('active', '');
             }
             // add active class in tab-btn and tab-contents
             e.target.className += ' active';
@@ -392,13 +437,12 @@
         // adding eventlistener to techtab
         element.addEventListener('click', onTabClick, false);
 
-
         const onSecTabClick = e => {
             // get all active items inside tech-tab
             let activeInTech = document.querySelectorAll('#elearning .active');
             // remove active class from each item
-            for (let i = 0; i < activeInTech.length; i++) {
-                activeInTech[i].className = activeInTech[i].className.replace('active', '');
+            for (let i of activeInTech) {
+                i.className = i.className.replace('active', '');
             }
             // add active class in tab-btn and tab-contents
             e.target.className += ' active';

@@ -336,6 +336,13 @@ q {
     .col-md-3 {
         display: none;
     }
+    .single-testimonial {
+        flex-direction: column;
+    }
+    .single-testimonial img {
+        width: 200px !important;
+        height: 200px !important;
+    }
 }
 
 @media only screen and (max-width: 763px) {
