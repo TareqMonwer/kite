@@ -551,10 +551,12 @@
             if (currentScroll > navbarHeight) {
                 $('nav').removeClass('nav-down').addClass('nav-up');
                 $('.nav-link').removeClass('text-dark').addClass('text-light');
+                $('.logo span').addClass('text-light');
                 console.log('up active');
             } else {
                 $('nav').removeClass('nav-up').addClass('nav-down');
                 $('.nav-link').removeClass('text-light').addClass('text-dark');
+                $('.logo span').removeClass('text-light')
                 console.log('down active');
             }
         });

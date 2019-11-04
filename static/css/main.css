@@ -1,11 +1,11 @@
 :root {
     --menu-hover-light: #eff4f4;
     --text-color: #6D7785;
-    --greenish-primary: #16a085;
+    --greenish-primary: #296156;
     --greenish-border: #16a08540;
     --greenish-fade-bg: #16a08526;
-    --greenish-text: #005e4b;
-    --text-primary: #555;
+    --greenish-text: #001712;
+    --text-primary: #232323;
     --shadow-down: 0px 2px 4px 0px rgba(0, 0, 0, .1);
 }
 
@@ -274,7 +274,7 @@ nav {
 }
 
 .tech-tabs-container li a.active {
-    background: #16A085;
+    background: var(--greenish-primary);
     color: #fff;
 }
 

@@ -1,0 +1,64 @@
+#service_detail_hero {
+    padding-top: 135px;
+    background: url(../../images/single_service/bg.svg) no-repeat;
+    overflow-x: hidden;
+}
+
+.service_hero_image img {
+    position: relative;
+    right: 0;
+    margin-left: 173px;
+    overflow: hidden;
+}
+
+#service_rolling_btns {
+    position: relative;
+    top: -130px;
+}
+
+.service_detail_title_box {
+    padding-bottom: 30px;
+}
+
+
+.question_circle {
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.question_circle h3 {
+    font-size: 29px;
+}
+
+.roll_bar_long div{
+    padding: 25px
+}
+
+#choose_any_tech {
+    background: #f4f4f4;
+    padding: 100px 0;
+}
+
+.service_tech_card {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0px 46px rgba(98, 100, 99, 0.23);
+    border-radius: 5px;
+}
+
+.tech_card__top img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 23px rgba(0, 0, 0, .2);
+    border-radius: 50%;
+}
+
+
+.feature_boxes div {
+  padding: 4px 0;
+}
+
+
+

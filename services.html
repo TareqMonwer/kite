@@ -25,7 +25,7 @@
     <!-- Navigation Section -->
     <nav class="navbar navbar-expand-lg fixed-top dark-navigation nv-top">
         <div class="container">
-            <a href="./index.html" class="logo navbar-brand mr-auto text-dark">
+            <a href="./index.html" class="logo navbar-brand mr-auto">
                 <img src="images/logos/kite.png" alt="" style="height: 40px !important; width: 64px;">
                 <span>kite</span>
             </a>
@@ -239,8 +239,8 @@
                     <img src="./images/logos/services_page/insights/group.svg" alt="" class="insight">
                     <img src="./images/logos/services_page/insights/target.svg" alt="" class="insight">
 
-                    <a href="" class="btn btn-info d-block mb-2">See Pricing Plans</a>
-                    <a href="" class="btn btn-success d-block">Go to Service Page</a>
+                    <a href="" class="btn bg-gprimary d-block mb-2">See Pricing Plans</a>
+                    <a href="./service_detail.html" class="btn btn-dark d-block">Go to Service Page</a>
                 </div>
                 <div class="single-service-quote col-8 py-5">
                     <q>
@@ -325,8 +325,8 @@
                     <img src="./images/logos/services_page/insights/group.svg" alt="" class="insight">
                     <img src="./images/logos/services_page/insights/target.svg" alt="" class="insight">
 
-                    <a href="" class="btn btn-info d-block mb-2">See Pricing Plans</a>
-                    <a href="" class="btn btn-success d-block">Go to Service Page</a>
+                    <a href="" class="btn bg-gprimary d-block mb-2">See Pricing Plans</a>
+                    <a href="" class="btn btn-dark d-block">Go to Service Page</a>
                 </div>
                 <div class="single-service-quote col-8 py-5">
                     <q>
@@ -406,12 +406,14 @@
 
             if (currentScroll > navbarHeight) {
                 $('nav').removeClass('nav-down').addClass('nav-up');
-                $('nav .nav-link').removeClass('text-dark').addClass('text-light');
-                // console.log('up active');
+                $('.nav-link').removeClass('text-dark').addClass('text-light');
+                $('.logo span').addClass('text-light');
+                console.log('up active');
             } else {
                 $('nav').removeClass('nav-up').addClass('nav-down');
-                $('nav .nav-link').removeClass('text-light').addClass('text-dark');
-                // console.log('down active');
+                $('.nav-link').removeClass('text-light').addClass('text-dark');
+                $('.logo span').removeClass('text-light')
+                console.log('down active');
             }
         });
 
