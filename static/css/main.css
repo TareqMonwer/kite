@@ -44,16 +44,16 @@ nav {
 .light-navigation a {
     color: #F5F7F9;
 }
-.light-navigation a:hover {
+/* .light-navigation a:hover {
     color: lightcyan;
-}
+} */
 
 .dark-navigation a {
     color: rgb(63, 63, 63);
 }
-.dark-navigation a:hover {
+/* .dark-navigation a:hover {
     color: lightcyan;
-}
+} */
 
 .logo.navbar-brand img {
     height: 40px !important; 

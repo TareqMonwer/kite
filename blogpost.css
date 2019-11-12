@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    columns: 3;
+    column-gap: 20px;
+}
+
+.container div {
+    background: rgb(197, 197, 197);
+    padding: 10px;
+    margin-top: 10px;
+}

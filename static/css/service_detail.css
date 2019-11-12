@@ -4,6 +4,20 @@
     overflow-x: hidden;
 }
 
+#txt-green {
+    color: rgb(6, 216, 146);
+}
+#txt-purple {
+    color: blueviolet;
+}
+#txt-orange {
+    color: coral;
+}
+
+#txt-d-green {color: darkgreen;}
+#txt-d-purple {color: darkslateblue;}
+#txt-d-orange {color: rgb(253, 63, 0);}
+
 .service_hero_image img {
     position: relative;
     right: 0;
@@ -69,7 +83,7 @@
 }
 
 #pricing_hero {
-    background: linear-gradient(0deg,rgba(255,0,150,0.3),rgba(255,0,150,0.3)),url(../../images/single_service/money.jpg) no-repeat;
+    background: linear-gradient(0deg,rgba(126, 0, 74, 0.68),rgba(255,0,150,0.3)),url(../../images/single_service/money.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
@@ -115,9 +129,25 @@ th, td {
 }
 th i {
     margin-right: 5px;
+    color: #00cf4f;
 }
 th:last-child, td:last-child {
-    border-bottom: 5px solid green;
+    border-bottom: 5px solid #34b5b5;
 }
 
+#process__inner .row .col-8 {
+    
+}
+
+#process__inner .row .col-8 h3 {
+    display: inline;
+    background: aquamarine;
+    padding: 0 7px;
+    border-radius: 3px;
+    box-shadow: 3px 3pxdarkcyan;
+}
+
+#process__inner .row .col-4 img {
+    width: 500px;
+}
 

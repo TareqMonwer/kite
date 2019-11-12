@@ -1,0 +1,74 @@
+
+#contact_form {
+  padding: 100px;
+}
+
+.inputgroup {
+  margin: 30px 0;
+}
+.inputgroup:first-child {
+  margin-top: 0 !important;
+}
+.inputgroup input, label, textarea {
+  display: block;
+  width: 100%;
+}
+.inputgroup input, textarea {
+  background: content-box;
+  border: 1px solid cadetblue;
+  color: cadetblue;
+  padding: 5px 20px;
+  border-radius: 3px;
+}
+form {
+  color: #235253;
+}
+.inputgroup span {
+  color: #b3afac;
+  font-size: .8rem;
+}
+
+#contact {
+  background: url(../../images/icons-pattern.jpg);
+  background-attachment: fixed;
+}
+
+#contact__inner {
+  background: rgba(39,62,84,0.82);
+  color: aliceblue;
+  padding: 50px 0;
+  word-spacing: 10px;
+  font-weight: bold;
+}
+
+#contact__details img {
+  width: 400px;
+  height: 400px;
+  box-shadow: -5px 5px 0px #008c65;
+  margin-bottom: 10px;
+}
+
+#contact__details::before {
+  content: '';
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border: 10px solid #2dcc00;
+  border-radius: 50%;
+  left: 75%;
+  top: -10%;
+  z-index: -1;
+  background:red;
+}
+
+#contact__details::after {
+  content: '';
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  background:#F5F7F9;
+  z-index: 1;
+  border-radius: 50%;
+  top: -55px;
+  left: 79%;
+}
