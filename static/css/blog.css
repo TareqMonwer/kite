@@ -96,7 +96,7 @@ small.category {
 
 .blog-main--container .news-box img {
   height: 250px;
-  width: 250px;
+  max-width: 200px;
 }
 .blog-main--container .news-box .content {
   max-height: 250px;
@@ -111,4 +111,39 @@ small.category {
   color: #484848;
   font-size: 18px;
   font-style: italic;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blog-sidebar {
+    position: static;
+    min-height: 30vh;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+}
+
+@media (max-width: 558px) {
+  .blog-main--container .row .col-md-6 {
+    max-height: none;
+  }
+
+  .blog-main--container .news-box img {
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .blog-main--container .news-box .content {
+    max-width: none;
+  }
+  .bubble {
+    padding: .1rem;
+    font-size: 12px;
+  }
 }

@@ -328,7 +328,7 @@ q {
 }
 
 #pricing-page-hero {
-    margin-top: 78px;
+/*     margin-top: 78px; */
     text-align: center;
 }
 
@@ -350,10 +350,12 @@ q {
     color: var(--greenish-text);    
 }
 
+
+/* Responsice */
 @media only screen and (max-width: 991px)  {
-    .col-md-3 {
+/*     .col-md-3 {
         display: none;
-    }
+    } */
     .single-testimonial {
         flex-direction: column;
     }
@@ -364,11 +366,14 @@ q {
 }
 
 @media only screen and (max-width: 763px) {
-    nav {
+    nav.navbar {
         background: var(--greenish-primary) !important;
     }
     .nav-link {
         color: #fff !important;
+    }
+    .mega-menu__service .text p {
+        display: none;
     }
 }
 
