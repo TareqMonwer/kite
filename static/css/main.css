@@ -18,9 +18,18 @@ body {
     background: var(--greenish-primary) !important;
     transition: .1s ease-in-out;
 }
+
+.border-g {
+    border: 1px solid var(--greenish-border);
+}
+
 .bg-gprimary {
     background: var(--greenish-primary) !important;
     color: white !important;
+}
+
+.bg-gprimary-water {
+    background-color: #00998345;
 }
 
 .bg-dark-greenish {
@@ -312,6 +321,11 @@ q {
     text-align: center;
     font-size: 1.4rem;
     font-style: italic;
+}
+
+#pricing-page-hero {
+    margin-top: 78px;
+    text-align: center;
 }
 
 

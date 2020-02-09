@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/16475baae0.js" crossorigin="anonymous"></script>
+    <title>Web Development - Service</title>
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/animate.css">
+    <link rel="stylesheet" href="./static/css/main.css">
+    <link rel="stylesheet" href="./static/css/service_detail.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <style>
+      .mixitup-control-active {
+        background: #296156;
+        color: aliceblue;
+      }
+      .action-btn {
+        border: 0;
+        border-right: 3px solid #16a08540;
+      }
+      #pricing-search .input-group-text.bg-gprimary {
+        border: none;
+        cursor: pointer;
+      }
+      #pricing-search input[type=text] {
+        border: 1px solid #16a08540;
+      }
+      #pricing-search input[type=text]:focus {
+        border: 2px solid #296156;
+        box-shadow: none;
+      }
+      .price-box.border-g.selected {
+        border: 3px solid #16a08540;
+      }
+      .price-box.border-g {
+        text-align: center;
+      }
+      .price-box.border-g h3 {
+        font-family: 'Hind', sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        color: #296156;
+      }
+      .price-box.border-g ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      .price-box.border-g ul li {
+        padding: .5rem 0;
+        color: #686868;
+      }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a href="./index.html" class="logo navbar-brand mr-auto">
+                <img src="images/logos/kite.png" alt="" style="height: 40px !important; width: 64px;">
+                <span>kite</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./services.html" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services and Pricing
+                        </a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="mega-menu__service d-flex mb-2 p-3">
+                                        <div class="icon">
+                                            <i class="fas fa-business-time"></i>
+                                        </div>
+                                        <div class="text">
+                                            <a href="./service_detail.html" class="text-gprimary">Finance & Management</a>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="mega-menu__service d-flex mb-2 p-3">
+                                        <div class="icon">
+                                            <i class="fas fa-lightbulb"></i>
+                                        </div>
+                                        <div class="text">
+                                            <a href="./service_detail.html" class="text-gprimary">Web Development</a>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            <!-- <img src="images/hero1.jpg" alt="" class="img-fluid"> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="mega-menu__service d-flex mb-2 p-3">
+                                        <div class="icon">
+                                            <i class="fas fa-spider"></i>
+                                        </div>
+                                        <div class="text">
+                                            <a href="./service_detail.html" class="text-gprimary">Automation Tool</a>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="mega-menu__service d-flex mb-2 p-3">
+                                        <div class="icon">
+                                            <i class="fas fa-file-medical-alt"></i>
+                                        </div>
+                                        <div class="text">
+                                            <a href="./service_detail.html" class="text-gprimary">Healthcare & Medicine</a>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="mega-menu__service d-flex mb-2 p-3">
+                                        <div class="icon">
+                                            <i class="fas fa-chalkboard-teacher"></i>
+                                        </div>
+                                        <div class="text">
+                                            <a href="./service_detail.html" class="text-gprimary">Education & E-Learning</a>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="mega-menu__service d-flex mb-2 p-3">
+                                        <div class="icon">
+                                            <i class="fas fa-bug"></i>
+                                        </div>
+                                        <div class="text">
+                                            <a href="./service_detail.html" class="text-gprimary">Bug Fixin/Re-creation</a>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row text-right">
+                                <div class="col-12">
+                                    <a class="text-gprimary" href="./services.html">All Services</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Forum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="" class="btn border nav-link">
+                            Project Contact <i class="ml-2 far fa-handshake"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <!-- hero section -->
+    <section id="pricing-page-hero" class="bg-gprimary-water">
+      <div class="container">
+        <div class="row py-4">
+          <div class="col-md-12">
+            <h3>Kite IT Has Best Pricing For Clients</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- search box -->
+    <section id="pricing-search" style="background-color: #16a08526;">
+      <div class="container">
+        <div class="row py-3">
+          <div class="col-md-12">
+            <form action="">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-gprimary">
+                    <i class="fas fa-search"></i>
+                  </span>
+                </div>
+                <input type="text" name="service_q" id="service" class="form-control"
+                placeholder="search for a service...">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricings">
+      <div class="container">
+        <div class="row mt-5 mb-3">
+          <div class="col-md-12">
+            <h4>Popular product pricings</h4>
+            <span class="line"></span>
+          </div>
+        </div>
+        <!-- services buttons -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="service-buttons controls d-flex">
+              <button class="action-btn" type="button" id="web" data-filter=".web">web development</button>
+              <button class="action-btn" type="button" data-filter=".bugfix">bugfixing</button>
+              <button class="action-btn" type="button" data-filter=".edu">e-learning and education</button>
+            </div>
+          </div>
+        </div>
+        <!-- services price mixup -->
+        <div class="row service-price-container">
+          <div class="col-md-4 mix web">
+            <div class="price-box border-g">
+              <img src="./images/services/goldenplan.png" class="py-2" height="100" alt="web development service price">
+              <h3 class="pricing-title">Golden Member</h3>
+              <ul>
+                <li>Free Themes (5)</li>
+                <li>Template Updates</li>
+                <li>1year Free Support</li>
+                <li>50 Points</li>
+                <li>Hosting 10% Off</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mix web">
+            <div class="price-box border-g selected">
+              <img src="./images/services/diamond.png" class="py-2" height="100" alt="web development service price">
+              <h3 class="pricing-title">Diamond Member</h3>
+              <ul>
+                <li>Free Themes (10+)</li>
+                <li>Template Updates</li>
+                <li>2year Free Support</li>
+                <li>100 Points</li>
+                <li>Hosting 20% Off</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mix web">
+            <div class="price-box border-g">
+              <img src="./images/services/platinum.png" class="py-2" height="100" alt="web development service price">
+              <h3 class="pricing-title">Platinum Member</h3>
+              <ul>
+                <li>Free Themes (20+)</li>
+                <li>Template Updates</li>
+                <li>3year Free Support</li>
+                <li>150 Points</li>
+                <li>Hosting 30% Off</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mix bugfix">
+            <div class="price-box border-g">
+              <img src="./images/services/goldenbug.png" class="py-2" height="100" alt="bugfix service price">
+              <h3 class="pricing-title">Golden Member</h3>
+              <ul>
+                <li>Free Themes (20+)</li>
+                <li>Template Updates</li>
+                <li>3year Free Support</li>
+                <li>150 Points</li>
+                <li>Hosting 30% Off</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mix bugfix">
+            <div class="price-box border-g">
+              <img src="./images/services/diamondbug.png" class="py-2" height="100" alt="bugfix service price">
+              <h3 class="pricing-title">Diamond Member</h3>
+              <ul>
+                <li>Free Themes (20+)</li>
+                <li>Template Updates</li>
+                <li>3year Free Support</li>
+                <li>150 Points</li>
+                <li>Hosting 30% Off</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mix bugfix">
+            <div class="price-box border-g">
+              <img src="./images/services/damage.png" class="py-2" height="100" alt="bugfix service price">
+              <h3 class="pricing-title">Platinum Member</h3>
+              <ul>
+                <li>Free Themes (20+)</li>
+                <li>Template Updates</li>
+                <li>3year Free Support</li>
+                <li>150 Points</li>
+                <li>Hosting 30% Off</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mix edu">
+            <div class="price-box border-g">
+              <img src="./images/services/goldenplan.png" class="py-2" height="100" alt="web development service price">
+              <h3 class="pricing-title">Golden Member</h3>
+              <ul>
+                <li>Free Themes (5)</li>
+                <li>Template Updates</li>
+                <li>1year Free Support</li>
+                <li>50 Points</li>
+                <li>Hosting 10% Off</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mix edu">
+            <div class="price-box border-g">
+              <img src="./images/services/goldenplan.png" class="py-2" height="100" alt="web development service price">
+              <h3 class="pricing-title">Golden Member</h3>
+              <ul>
+                <li>Free Themes (5)</li>
+                <li>Template Updates</li>
+                <li>1year Free Support</li>
+                <li>50 Points</li>
+                <li>Hosting 10% Off</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mix edu">
+            <div class="price-box border-g">
+              <img src="./images/services/goldenplan.png" class="py-2" height="100" alt="web development service price">
+              <h3 class="pricing-title">Golden Member</h3>
+              <ul>
+                <li>Free Themes (5)</li>
+                <li>Template Updates</li>
+                <li>1year Free Support</li>
+                <li>50 Points</li>
+                <li>Hosting 10% Off</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+          <div class="col-md-4">
+            <a href="#" class="btn btn-sm bg-gprimary">
+              continue to get a membership
+              <i class="ml-2 fas fa-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="line-gape200"></div>
+    <!-- Footer -->
+    <section id="footer" class="bg-gprimary pt-5">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-12 col-md-3">
+                    <div class="d-flex flex-column inner__footer">
+                        <h3>Services</h3>
+                        <a href="" class="footer_item_link">Web Development</a>
+                        <a href="" class="footer_item_link">Training</a>
+                        <a href="" class="footer_item_link">Bug Fixing</a>
+                        <a href="" class="footer_item_link">Automation</a>
+                        <a href="" class="footer_item_link">Business Solution</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="d-flex flex-column inner__footer">
+                        <h3>Support</h3>
+                        <a href="" class="footer_item_link">Terms of Service</a>
+                        <a href="" class="footer_item_link">Refund Policy</a>
+                        <a href="" class="footer_item_link">Prvacy Policy</a>
+                        <a href="" class="footer_item_link">Report A Bug</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="d-flex flex-column inner__footer">
+                        <h3>Company</h3>
+                        <a href="" class="footer_item_link">About Us</a>
+                        <a href="" class="footer_item_link">Contact Us</a>
+                        <a href="" class="footer_item_link">Testimonials</a>
+                        <a href="" class="footer_item_link">Partners</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark-greenish">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-light py-3 mb-0">© <span id="current_year"></span>, KITE Ltd. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="static/js/jquery-3.4.1.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="./static/mixitup-v3/mixitup.min.js"></script>
+
+    <script>
+        // Current Year in Footer
+        document.getElementById('current_year').innerHTML = new Date().getFullYear();
+
+        // Navigation Scroll Animation
+        $(window).scroll(function () {
+            var currentScroll = $(document).scrollTop(); // the current scrollTop position
+            var navbarHeight = $('nav').outerHeight();
+
+            if (currentScroll > navbarHeight) {
+                $('nav').removeClass('nav-down').addClass('nav-up');
+                $('.nav-link').removeClass('text-dark').addClass('text-light');
+                $('.logo span').addClass('text-light');
+            } else {
+                $('nav').removeClass('nav-up').addClass('nav-down');
+                $('.nav-link').removeClass('text-light').addClass('text-dark');
+                $('.logo span').removeClass('text-light');
+            }
+        });
+
+        // Mixitup
+        var conf = document.querySelector('.service-price-container');
+        var mixer = mixitup(conf, {
+            controls: {
+                toggleDefault: '.web'
+            }
+        });
+        mixer.toggleOn('.web')
+          .then(function() {
+            // Deactivate all active toggles
+            return mixer.toggleOff('.web')
+          })
+          .then(function(state) {
+            console.log(state.activeFilter.selector); // 'none'
+            console.log(state.totalShow); // 0
+          });
+
+    </script>
+</body>
+
+</html>
