@@ -21,7 +21,12 @@
       }
       .action-btn {
         border: 0;
-        border-right: 3px solid #16a08540;
+        padding: .3rem 1rem;
+        background: #00998345;
+        text-transform: uppercase;
+      }
+      button#bugfix {
+        margin: 0 .2rem;
       }
       #pricing-search .input-group-text.bg-gprimary {
         border: none;
@@ -156,10 +161,7 @@
                         <a href="./blog.html" class="nav-link">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Forum</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Contact</a>
+                        <a href="./contact.html" class="nav-link">Contact</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
@@ -215,12 +217,12 @@
           </div>
         </div>
         <!-- services buttons -->
-        <div class="row">
+        <div class="row mb-2">
           <div class="col-md-12">
             <div class="service-buttons controls d-flex">
               <button class="action-btn" type="button" id="web" data-filter=".web">web development</button>
-              <button class="action-btn" type="button" data-filter=".bugfix">bugfixing</button>
-              <button class="action-btn" type="button" data-filter=".edu">e-learning and education</button>
+              <button class="action-btn" type="button" id="bugfix" data-filter=".bugfix">bugfixing</button>
+              <button class="action-btn" type="button" id="edu" data-filter=".edu">e-learning and education</button>
             </div>
           </div>
         </div>
@@ -345,7 +347,7 @@
           </div>
         </div>
         <div class="row justify-content-center mt-3">
-          <div class="col-md-4">
+          <div class="col-md-5">
             <a href="#" class="btn btn-sm bg-gprimary">
               continue to get a membership
               <i class="ml-2 fas fa-angle-double-right"></i>
