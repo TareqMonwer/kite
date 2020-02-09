@@ -11,56 +11,15 @@
     <link rel="stylesheet" href="./static/css/bootstrap.min.css">
     <link rel="stylesheet" href="./static/css/animate.css">
     <link rel="stylesheet" href="./static/css/main.css">
-    <link rel="stylesheet" href="./static/css/service_detail.css">
+    <link rel="stylesheet" href="./static/css/blog.css">
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
-    <style>
-      .mixitup-control-active {
-        background: #296156;
-        color: aliceblue;
-      }
-      .action-btn {
-        border: 0;
-        border-right: 3px solid #16a08540;
-      }
-      #pricing-search .input-group-text.bg-gprimary {
-        border: none;
-        cursor: pointer;
-      }
-      #pricing-search input[type=text] {
-        border: 1px solid #16a08540;
-      }
-      #pricing-search input[type=text]:focus {
-        border: 2px solid #296156;
-        box-shadow: none;
-      }
-      .price-box.border-g.selected {
-        border: 3px solid #16a08540;
-      }
-      .price-box.border-g {
-        text-align: center;
-      }
-      .price-box.border-g h3 {
-        font-family: 'Hind', sans-serif;
-        font-weight: bold;
-        font-size: 1rem;
-        color: #296156;
-      }
-      .price-box.border-g ul {
-        list-style: none;
-        padding-left: 0;
-      }
-      .price-box.border-g ul li {
-        padding: .5rem 0;
-        color: #686868;
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
 
     <!-- Navigation Section -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a href="./index.html" class="logo navbar-brand mr-auto">
                 <img src="images/logos/kite.png" alt="" style="height: 40px !important; width: 64px;">
@@ -173,9 +132,172 @@
         </div>
     </nav>
 
+    <!-- blog hero section -->
+    <section id="blog-hero" class="bg-gprimary-water">
+      <div class="container py-5">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-12">
+            <h3 class="latest-news-title">New updates from web development service</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat harum vel suscipit ullam esse impedit atque? Cum cupiditate corporis, nostrum autem amet voluptate impedit consequatur fugit hic consectetur odit incidunt.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-2 text-right">
+            <small class="date">10 Jan 2020</small>
+          </div>
+          <div class="col-md-2 text-left">
+            <small class="category">service update</small>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center mt-3">
+          <div class="col-md-12">
+            <a href="#" class="btn btn-sm bg-gprimary">read details <i class="ml-2 fas fa-angle-double-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog-main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 blog-sidebar">
+            <ul class="m-0 p-0">
+              <li><a href="">Latest News</a></li>
+              <li><a href="">Product Updates</a></li>
+              <li><a href="">Policy Updates</a></li>
+            </ul>
+          </div>
+
+          <!-- BLOG POST RIGHT -->
+          <div class="col-md-9 blog-main--container d-flex flex-column mt-4">
+            <div class="container">
+              <div class="row justify-content-around p-3">
+                
+                <div class="col-md-6">
+                  <div class="news-box d-flex">
+                    <img src="./images/hero3.jpg" alt="">
+                    <div class="content p-2">
+                      <h5 class="news-title">Whoa! There is a new service available!</h5>
+                      <p>
+                        <span class="bubble bg-green-w date">8 Jan 2020</span>
+                        <span class="bubble bg-orange-w category">Latest News</span>
+                      </p>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-md-6">
+                  <div class="news-box d-flex">
+                    <img src="./images/hero1.jpg" alt="">
+                    <div class="content p-2">
+                      <h5 class="news-title">Whoa! There is a new service available!</h5>
+                      <p>
+                        <span class="bubble bg-green-w date">8 Jan 2020</span>
+                        <span class="bubble bg-orange-w category">Latest News</span>
+                      </p>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-md-6">
+                  <div class="news-box d-flex">
+                    <img src="./images/hero2.jpg" alt="">
+                    <div class="content p-2">
+                      <h5 class="news-title">Whoa! There is a new service available!</h5>
+                      <p>
+                        <span class="bubble bg-green-w date">8 Jan 2020</span>
+                        <span class="bubble bg-orange-w category">Latest News</span>
+                      </p>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-md-6">
+                  <div class="news-box d-flex">
+                    <img src="./images/hero1.jpg" alt="">
+                    <div class="content p-2">
+                      <h5 class="news-title">Whoa! There is a new service available!</h5>
+                      <p>
+                        <span class="bubble bg-green-w date">8 Jan 2020</span>
+                        <span class="bubble bg-orange-w category">Latest News</span>
+                      </p>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-md-6">
+                  <div class="news-box d-flex">
+                    <img src="./images/hero3.jpg" alt="">
+                    <div class="content p-2">
+                      <h5 class="news-title">Whoa! There is a new service available!</h5>
+                      <p>
+                        <span class="bubble bg-green-w date">8 Jan 2020</span>
+                        <span class="bubble bg-orange-w category">Latest News</span>
+                      </p>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-md-6">
+                  <div class="news-box d-flex">
+                    <img src="./images/hero3.jpg" alt="">
+                    <div class="content p-2">
+                      <h5 class="news-title">Whoa! There is a new service available!</h5>
+                      <p>
+                        <span class="bubble bg-green-w date">8 Jan 2020</span>
+                        <span class="bubble bg-orange-w category">Latest News</span>
+                      </p>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pagination -->
+                <nav aria-label="Pagination" class="shadow-none align-self-center">
+                  <ul class="pagination">
+                    <li class="page-item disabled">
+                      <span class="page-link">Previous</span>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item">
+                      <span class="page-link">
+                        2
+                      </span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-    <div class="line-gape200"></div>
+
+    <!-- <div class="line-gape200"></div> -->
     <!-- Footer -->
     <section id="footer" class="bg-gprimary pt-5">
         <div class="container">
@@ -225,27 +347,10 @@
     <script src="static/js/jquery-3.4.1.min.js"></script>
     <script src="static/js/popper.min.js"></script>
     <script src="static/js/bootstrap.min.js"></script>
-    <script src="./static/mixitup-v3/mixitup.min.js"></script>
 
     <script>
         // Current Year in Footer
         document.getElementById('current_year').innerHTML = new Date().getFullYear();
-
-        // Navigation Scroll Animation
-        $(window).scroll(function () {
-            var currentScroll = $(document).scrollTop(); // the current scrollTop position
-            var navbarHeight = $('nav').outerHeight();
-
-            if (currentScroll > navbarHeight) {
-                $('nav').removeClass('nav-down').addClass('nav-up');
-                $('.nav-link').removeClass('text-dark').addClass('text-light');
-                $('.logo span').addClass('text-light');
-            } else {
-                $('nav').removeClass('nav-up').addClass('nav-down');
-                $('.nav-link').removeClass('text-light').addClass('text-dark');
-                $('.logo span').removeClass('text-light');
-            }
-        });
     </script>
 </body>
 

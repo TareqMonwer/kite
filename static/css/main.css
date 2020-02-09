@@ -41,6 +41,10 @@ body {
     color: var(--greenish-primary) !important;
 }
 
+.btn {
+    text-transform: uppercase;
+}
+
 p {
     color: var(--text-primary);
     font-size: 1em;
